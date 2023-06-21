@@ -28,4 +28,4 @@ btn1=Button(root,text='GREEN',command=option1,bg='ForestGreen').place(x=100,y=12
 btn2=Button(root,text='RED',command=option2,bg='Crimson').place(x=350,y=120)
 btn3=Button(root,text='BLUE',command=option3,bg='DeepSkyBlue').place(x=600,y=120)
 root.mainloop()
-#ทำเพิ่มเป็น 5 ปุ่ม การ์ตูนอะไรก็ได้
+#ทำเพิ่มเป็น 5 ปุ่ม รูปการ์ตูนอะไรก็ได้
