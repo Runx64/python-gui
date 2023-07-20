@@ -32,3 +32,5 @@ btn2 = Button(root,text ="Click to open Window2",command = window2)
 btn2.pack(pady = 10) 
 # mainloop, runs infinitely
 mainloop()
+
+# เขียนโปรแกรมคำนวณพื้นที่รูปเรขาคณิตอะไรก็ได้ 3 รูป แยกเป็น 3 หน้าต่าง(window) หน้าต่างละ 1 รูป
