@@ -4,39 +4,31 @@ from tkinter.ttk import *
  
 # creates a Tk() object
 root = Tk()
+root.geometry("400x400")
  
-# sets the geometry of main
-# root window
-root.geometry("200x200")
- 
- 
-# function to open a new window
-# on a button click
-def openNewWindow():
-     
-    # Toplevel object which will
-    # be treated as a new window
-    newWindow = Toplevel(root)
- 
-    # sets the title of the
-    # Toplevel widget
-    newWindow.title("New Window")
- 
-    # sets the geometry of toplevel
-    newWindow.geometry("200x200")
- 
+def window1():
+    # Set Toplevel object which will
+    window1 = Toplevel(root)
+    window1.title("New Window")
+    window1.geometry("400x400")
+    # Set background for Toplevel
+    window1['bg']='blue'
     # A Label widget to show in toplevel
-    Label(newWindow,text ="This is a new window").pack()
+    Label(window1,text ="This is Window1").pack(pady = 10)
+    
+def window2():
+    # Set Toplevel object which will
+    window2 = Toplevel(root)
+    window2.title("New Window2")
+    window2.geometry("400x400")
+    # Set background for Toplevel
+    window2['bg']='green'
+    # A Label widget to show in toplevel
+    Label(window2,text ="This is Window2").pack(pady = 10)
  
- 
-label = Label(root,text ="This is the main window")
- 
-label.pack(pady = 10)
- 
-# a button widget which will open a
-# new window on button click
-btn = Button(root,text ="Click to open a new window",command = openNewWindow)
+btn = Button(root,text ="Click to open Window1",command = window1)
 btn.pack(pady = 10)
- 
+btn2 = Button(root,text ="Click to open Window2",command = window2)
+btn2.pack(pady = 10) 
 # mainloop, runs infinitely
 mainloop()
